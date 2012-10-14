@@ -1,0 +1,27 @@
+.deck-container {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 1.75em;
+  background: #fff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fff 0%, #ccc 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ccc));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fff 0%, #ccc 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fff 0%, #ccc 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #fff 0%, #ccc 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #fff 0%, #ccc 100%);
+  /* W3C */
+  background-attachment: fixed;
+}
+
+.deck-container .slide h1, .deck-container .slide h2, .deck-container .slide h3, .deck-container .slide h4, .deck-container .slide h5, .deck-container .slide h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.slide h1 {
+	font-size: 3em;
+}
