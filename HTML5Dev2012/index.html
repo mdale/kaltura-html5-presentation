@@ -150,7 +150,7 @@
 	<h2>Know the Platform Limitations</h2>
 	<ul>
 	   <li>Platform grades</li>
-	   <img src="browser_overview.png" style="height:300px">
+	   <a href="browser_overview.png" target="_new"><img src="browser_overview.png" style="height:300px"></a>
 	   <li>Some good resources:
 			<ul>
 				<li>html5rocks.com <a href="http://www.html5rocks.com/en/features/multimedia">audio video section</a></li>
@@ -223,33 +223,33 @@
 <section class="slide vcenter">
     <h2> Many ways to Skin an HTML5 player </h2>
     <ul>
-        <li>Pure CSS based skins are great for providing clients with easy color theming 
+        <li class="slide">Pure CSS based skins are great for providing clients with easy color theming 
         	<img src="skinsetup.jpg">
         </li>
-        <li>Sprite based skins are good for designers that are not css ninjas
+        <li class="slide">Sprite based skins are good for designers that are not css ninjas
         	<a target="_new" href="http://html5video.org/kaltura-player/modules/KalturaSupport/tests/CustomSkin.html"><img src="customSkin.jpg"></a>
         </li>
-        <li>Should be easy to load custom css across configuration contexts
+        <li class="slide">Should be easy to load custom css across configuration contexts
         	<img src="cssurls.jpg">
         </li>
 </section>
 
 <section class="slide vcenter">
-    <h2> Platform Trade offs </h2>
+    <h2> Platform Trade-offs </h2>
     <ul>
-        <li><h4>
+        <li class="slide"><h4>
         	<a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Hybrid_HTML_controls.2C_native_fullscreen_mode_on_iPad">Native iPad fullscreen</a> vs in-browser fullscreen
         	</h4><p>iOS does not support dom overlay fullscreen; depending on your use context and monetization needs you may want native fullscreen vs dom overlay pseudo fullscreen</p>
         </li>
-         <li><h4>
+         <li class="slide"><h4>
         	<a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Enabling_Apple_AirPlay">Enable AirPlay</a>
         	</h4><p>Apple has a proprietary web extension  to opt into supporting web content streamed to your TV</p>
         </li>
-        <li><h4>
+        <li class="slide"><h4>
         	<a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Lead_with_HTML5_on_Android">Lead with HTML5 on Android</a>
         	</h4><p>Flash on android is now on its way out, so you may want to use html5 all the time.</p>
         </li>
-        <li> 
+        <li class="slide"> 
         	<h4><a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Hybrid_HTML_controls.2C_native_fullscreen_mode_on_iPad">and many more </a>
         	</h4>
         	<p> Point being; retain configuration flexibility for different use contexts.</p> 
@@ -258,16 +258,34 @@
 </section>
 
 <section class="slide vcenter">
-    <h2> Taking advantage of desktop HTML5!</h2>
+    <h2> Taking advantage of Desktop HTML5!</h2>
+    <li class="slide"> <h4>DOM full screen</h4></li>
+    <li class="slide"> <h4>Multiple video playback support ( gapless ad inserts)</h4> </li>
+    <li class="slide"> <h4><a href="http://html5video.org/blog/2012/09/22/foms-workshop-and-the-state-of-open-web-video/">Upcoming features</a> webRTC; media source api etc. </h4> </li>
 </section>
 
 
 <section class="slide vcenter">
     <h2> How do we make it all <i style="font-style:italic">Fast!</i></h2>
     <ul>
-    	<li>Dynamic Packaging</li>
-    	<li>iframe metadata and configuration Packaging</li>
-    	<li>Lean towards fewer requests over cache miss ( especially on mobile )</li>
+    	<li class="slide"><h4>Dynamic Packaging</h4><p>
+    	   Aribrary plugin combinations cached on the CDN; ( no pre-building, important with <a href="http://html5video.org/kaltura-player/docs/">lots of plugins</a> )
+    	</p></li>
+    	<li class="slide"><h4>iframe metadata and configuration Packaging</h4><p>Again with iframe cached on CDN; no cache if per-user access controls</li>
+    	<li class="slide"><h4>Fewer requests over cache miss</h4><p> We lean towards few requests over long or uniuqe cache times<p></li>
+    </ul>
+</section>
+
+<section class="slide vcenter">
+    <h2> How do we make it all <i style="font-style:italic">maintainable</i></h2>
+    <ul>
+        <li><h3>TestSwarm with Qunit ( or your automated testing platform of choice)</h3>
+            <img src="testwarm.png">
+        </li>
+        <li> Every feature page is a <a href="http://html5video.org/kaltura-player/docs/Player_Features/WatermarkTest">demo of the feature</a>; its 
+        <a href="http://html5video.org/kaltura-player/docs/Player_Features/FlavorSelector">configuration documentation</a>; and its 
+        <a href="http://html5video.org/kaltura-player/modules/KalturaSupport/tests/AdFlashvarVastDoubleClickCompanion.qunit.html?runQunitTests=1">automated test</a>
+        </li>
     </ul>
 </section>
 
