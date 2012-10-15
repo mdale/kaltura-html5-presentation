@@ -154,7 +154,7 @@
 			<ul>
 				<li>html5rocks.com <a href="http://www.html5rocks.com/en/features/multimedia">audio video section</a></li>
 				<li><a href="http://caniuse.com/">Can I Use.com</a> </li>
-				<li>Long tail <a href="http://www.longtailvideo.com/html5">state of html5 video</a></li>
+				<li>Long Tail <a href="http://www.longtailvideo.com/html5">state of html5 video</a></li>
 				<li> Google / StackOverflow for per device issues </li>
 			</ul>
 		</li>
@@ -196,8 +196,7 @@
          playlist</a> and <a href="http://html5video.org/kaltura-player/docs/On_Page_Plugins/playlistOnPage">onPage playlist</a>
           ( flash + html5 )</h4>
         <p>provides felxiblity for cross site widget embeding or custom skinning on page </p></li>
-        <li class="slide">
-        To retain flexiblity; don't limit plugins to "inside" the player.  
+        <li class="slide"><h4>To retain flexiblity; don't limit plugins to "inside" the player.</h4>  
         </li>
     </ul>
 </section>
@@ -206,14 +205,32 @@
 <section class="slide vcenter">
     <h2> Embed everywhere </h2>
     <ul>
-        <li>Keep your kittens safe in a sandbox!<li>
-        <li>Iframe embed protects against client CSS and JS</li>
-        <li>Friendly iframes are key to avoid async issues and overhead of postMessage</li>
+        <li><h4>Keep your kittens safe in a sandbox!</h4>
+       	<img src="kittens_sandbox.jpg"></img>
+        </li>
+        <li><h4><a href="http://html5video.org/kaltura-player/docs/Embeding/kwidget">Iframe embed</a> 
+        protects against messy client CSS and JS</li></h4>
+        <li><h4>Friendly iframes!</h4><p>Avoid async issues for realtime applications, avoid overhead of postMessage; avoid complicated attribute sync proxy</p></li>
+        <li>  <h4> Embed flexibility: <a href="http://html5video.org/kaltura-player/docs/Embeding/thumb">Thumbnails embeds</a> dozens of players in few ms </h4>
+         <p>Work around iOS JS play restriction; sync playback of black video src; async loading of library; iframe and asset metadata</p>
+         </li>
     </ul>
+    <span> cc from <a href="http://www.flickr.com/photos/wing-mui/7351525180/sizes/z/in/photostream/">amysept</a></span>
 </section>
+
 
 <section class="slide vcenter">
     <h2> Many ways to Skin an HTML5 player </h2>
+    <ul>
+        <li>Pure CSS based skins are great for providing clients with easy color theming 
+        	<img src="skinsetup.jpg">
+        </li>
+        <li>Sprite based skins are good for designers that are not css nijas
+        	<a target="_new" href="http://html5video.org/kaltura-player/modules/KalturaSupport/tests/CustomSkin.html"><img src="customSkin.jpg"></a>
+        </li>
+        <li>Should be easy to load custom css across configuration contexts
+        	<img src="cssurls.jpg">
+        </li>
 </section>
 
 
