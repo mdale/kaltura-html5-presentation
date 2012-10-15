@@ -116,7 +116,7 @@
         </li>
         <li  class="slide" >
             <h3>Codecs and playback</h3>
-            <p>Not just WebM vs H.264; HLS and alternate adaptive formats.</p>
+            <p>Not just WebM vs H.264; HLS and alternate adaptive formats. ( not to mention <i style="font-style:italic">content controls</i> )</p>
         </li>
         <li  class="slide" >
             <h3>Display layer inconsistencies</h3>
@@ -135,9 +135,9 @@
 
 
 <section class="slide">
-	<h2>Windy road; but clients still want kittens!</h2>
+	<h2>Windy road; but we still want kittens!</h2>
 	<div class="vcenter">
-	<img src="lombard.jpg" style="height:600px;">
+	<img src="lombard.jpg" style="height:400px;">
 	<span syle="text-align:center">not just one type of kitten; but every variation.</span>
 	<br>
 	</div>
@@ -146,12 +146,15 @@
 
 
 <section class="slide vcenter">
-	<h2>Know the platform limitations</h2>
+	<h2>Know the Platform Limitations</h2>
 	<ul>
-		<li>Some good resources:
+	   <li>Platform grades</li>
+	   <img src="browser_overview.png" style="height:300px">
+	   <li>Some good resources:
 			<ul>
 				<li>html5rocks.com <a href="http://www.html5rocks.com/en/features/multimedia">audio video section</a></li>
 				<li><a href="http://caniuse.com/">Can I Use.com</a> </li>
+				<li>Long tail <a href="http://www.longtailvideo.com/html5">state of html5 video</a></li>
 				<li> Google / StackOverflow for per device issues </li>
 			</ul>
 		</li>
@@ -161,13 +164,13 @@
 <section class="slide vcenter">
 <h2> Know Your HTML5 Video Delivery Goals:</h2>
 	<ul> 
-		<li  class="slide"> Of course "robust", "fast" and "compatible"</li>
 		<li  class="slide"> Building a single player or many variations ? </li>
 		<li  class="slide"> Embedding into a controlled context or unpredictable ? </li>
 		<li  class="slide"> Skinning once; or dozens of times with dynamic color variations ? </li>
 		<li  class="slide"> Will platform trade-offs be configurable ? </li>
 		<li  class="slide"> Supporting mobile; or both desktop and mobile?</li>
 		<li  class="slide"> Supporting plugins; per packaged install or per dynamic configuration ? </li>
+		<li  class="slide"> And of course, "fast", "robust" and "maintinable"</li>
 	</ul>
 </section>	
 
@@ -177,9 +180,46 @@
 	<span style="font-size:.7em;">
 	cc by <a href="http://www.flickr.com/photos/ajc1/4663140532/">ajc1</a>
 	</span>
-</section>  
+</section>
+
+<section class="slide vcenter">
+   <h2> An Architexture for flexibility of feature delivery</h2>
+   <img src="onPageVsiframeplugins.png">
+</section>
+
+<section class="slide vcenter">
+    <h2> What does this enable? </h2>
+    <ul>
+        <li class="slide"> <h4>Unified configrability for on page and in player plugins</h4></li>
+        <li class="slide">
+        <h4>For example: <a href="http://html5video.org/kaltura-player/docs/Embeding/kwidgetPlaylist">embeded
+         playlist</a> and <a href="http://html5video.org/kaltura-player/docs/On_Page_Plugins/playlistOnPage">onPage playlist</a>
+          ( flash + html5 )</h4>
+        <p>provides felxiblity for cross site widget embeding or custom skinning on page </p></li>
+        <li class="slide">
+        To retain flexiblity; don't limit plugins to "inside" the player.  
+        </li>
+    </ul>
+</section>
 
 
+<section class="slide vcenter">
+    <h2> Embed everywhere </h2>
+    <ul>
+        <li>Keep your kittens safe in a sandbox!<li>
+        <li>Iframe embed protects against client CSS and JS</li>
+        <li>Friendly iframes are key to avoid async issues and overhead of postMessage</li>
+    </ul>
+</section>
+
+<section class="slide vcenter">
+    <h2> Many ways to Skin an HTML5 player </h2>
+</section>
+
+
+<section class="slide vcenter">
+    <h2> How do we make it all <i style="font-style:italic">Fast!</i></h2>
+</section>
 
 <!-- End slides. -->
 
