@@ -34,25 +34,30 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide">
-	<span class="vcenter">
+<span class="vcenter">
 	<h1>HTML5 Video Full Throttle</h1>
 	( or how I learned to stop worrying and love html5 web video )<br>
-	<div style="height:80px;" ></div>	
-	<img src="HTML5_shield_re.png" style="height:70px;display:inline">
-	<img src="DevConf_text_re.png" style="height:40px;display:inline;position:relative;top:-20px;"> 
-	<span style="position:relative;top:-65px" >SF | 2012</span>
-	<div ></div>	
-	<img src="kaltura_logo.png" style="height:80px;display:inline">
-	<span style="position:relative;top:-45px;">Michael Dale 
-		<img src="twitter_newbird_blue.png"  style="position:relative;top:38px;height:40px;display:inline"> 
-		<span style="position:relative;font-size:1em;">@michael_dale</span>
-	</span> 
-	<BR><span style="position:relative;left:25px;top:-30px;">Lead Front End Architect</span>
-	<br> 
-	follow along:<a href="http://goo.gl/yHm2l"> http://goo.gl/yHm2l </a>
+	<div style="height:80px;" ></div>
+	    <img src="HTML5_shield_re.png" style="height:70px;display:inline">
+    <img src="DevConf_text_re.png" style="height:40px;display:inline;position:relative;top:-20px;"> 
+    <span style="position:relative;top:-65px" >SF | 2012</span>
+    <div>
+	     <br> 
+	    follow along:<a href="http://goo.gl/yHm2l"> http://goo.gl/yHm2l </a>
+    </div>
+    </span>
 </section>
  
-
+<section class="slide">
+<span class="vcenter">
+    <img src="kaltura_logo.png" style="height:80px;display:inline">
+    <span style="position:relative;top:-45px;">Michael Dale 
+        <img src="twitter_newbird_blue.png"  style="position:relative;top:38px;height:40px;display:inline"> 
+        <span style="position:relative;font-size:1em;">@michael_dale</span>
+    </span> 
+    <BR><span style="position:relative;left:25px;top:-30px;">Lead Front End Architect</span>
+</span>
+</section>
 
 <section class="slide">
 	<h2>Promise of HTML5</h2>
@@ -77,11 +82,12 @@
 </section>
 
 <section class="slide vcenter">
-	<h2>& Kittens and Rainbows!</h2>
+	<h2>& Kittens, Rainbows and Unicorns!</h2>
 	<img src="icanhashtml5.jpg">
 	<span style="font-size:.7em;">
 	cc attribution <a href="http://www.flickr.com/photos/aigle_dore/4516670863/">aigle_dore</a> 
 	cc kitten <a href="http://www.flickr.com/photos/mtrichardson/4626549119/">mtrichardson</a> 
+	cc unicorn <a href="http://www.flickr.com/photos/robboudon/6035811624/sizes/l/in/photostream/">robboudon</a> 
 	</span>
 </section>
 
@@ -138,7 +144,7 @@
 <section class="slide">
 	<h2>Windy road; but we still want kittens!</h2>
 	<div class="vcenter">
-	<img src="lombard.jpg" style="height:400px;">
+	<img src="lombard.jpg" style="height:300px;">
 	<span syle="text-align:center">not just one type of kitten; but every variation.</span>
 	<br>
 	</div>
@@ -206,13 +212,13 @@
 <section class="slide vcenter">
     <h2> Embed everywhere </h2>
     <ul>
-        <li><h4>Keep your kittens safe in a sandbox!</h4>
+        <li  class="slide"><h4>Keep your kittens safe in a sandbox!</h4>
        	<img src="kittens_sandbox.jpg"></img>
         </li>
-        <li><h4><a href="http://html5video.org/kaltura-player/docs/Embeding/kwidget">Iframe embed</a> 
+        <li  class="slide"><h4><a href="http://html5video.org/kaltura-player/docs/Embeding/kwidget">Iframe embed</a> 
         protects against messy client CSS and JS</li></h4>
-        <li><h4>Friendly iframes!</h4><p>Avoid async issues for realtime applications, avoid overhead of postMessage; avoid attribute sync proxy</p></li>
-        <li>  <h4> Embed flexibility: <a href="http://html5video.org/kaltura-player/docs/Embeding/thumb">Thumbnails embeds</a> dozens of players in few ms </h4>
+        <li class="slide"><h4>Friendly iframes!</h4><p>Avoid async issues for realtime applications, avoid overhead of postMessage; avoid attribute sync proxy</p></li>
+        <li class="slide">  <h4> Embed flexibility: <a href="http://html5video.org/kaltura-player/docs/Embeding/thumb">Thumbnails embeds</a> dozens of players in few ms </h4>
          <p>Work around iOS JS play restriction; sync playback of black video src; async loading of library; iframe and asset metadata</p>
          </li>
     </ul>
@@ -258,20 +264,15 @@
 </section>
 
 <section class="slide vcenter">
-    <h2> Taking advantage of Desktop HTML5!</h2>
-    <li class="slide"> <h4>DOM full screen</h4></li>
-    <li class="slide"> <h4>Multiple video playback support ( gapless ad inserts)</h4> </li>
-    <li class="slide"> <h4><a href="http://html5video.org/blog/2012/09/22/foms-workshop-and-the-state-of-open-web-video/">Upcoming features</a> webRTC; media source api etc. </h4> </li>
-</section>
-
-
-<section class="slide vcenter">
     <h2> How do we make it all <i style="font-style:italic">Fast!</i></h2>
     <ul>
     	<li class="slide"><h4>Dynamic Packaging</h4><p>
-    	   Aribrary plugin combinations cached on the CDN; ( no pre-building, important with <a href="http://html5video.org/kaltura-player/docs/">lots of plugins</a> )
+    	   Aribrary plugin combinations cached on the CDN; ( no pre-building, important with <a href="http://html5video.org/kaltura-player/docs/">lots of plugin</a> combinations )
     	</p></li>
-    	<li class="slide"><h4>iframe metadata and configuration Packaging</h4><p>Again with iframe cached on CDN; no cache if per-user access controls</li>
+    	<li class="slide"><h4>
+    	<a href="view-source:http://html5video.org/kaltura-player/mwEmbedFrame.php/wid/_243342/uiconf_id/2877502/entry_id/0_uka1msg4/?&flashvars[autoPlay]=false&">Iframe metadata</a> 
+    	and configuration Packaging</h4>
+    	<p>Again with iframe cached on CDN; no cache if per-user access controls</p></li>
     	<li class="slide"><h4>Fewer requests over cache miss</h4><p> We lean towards few requests over long or uniuqe cache times<p></li>
     </ul>
 </section>
@@ -289,6 +290,15 @@
     </ul>
 </section>
 
+<section class="slide vcenter">
+    <h2> Taking advantage of Desktop HTML5!</h2>
+     <li class="slide"><h4>Explore the future today!</h4></li>
+    <li class="slide"> <h4>DOM full screen</h4></li>
+    <li class="slide"> <h4>Multiple simotanius video/audio playback support</h4> </li>
+    <li class="slide"> <h4><a href="http://html5video.org/blog/2012/09/22/foms-workshop-and-the-state-of-open-web-video/">Upcoming features:</a> 
+    <a href="http://dvcs.w3.org/hg/html-media/raw-file/tip/media-source/media-source.html">media source api</a> ( <a href="http://html5-demos.appspot.com/static/media-source.html">demo</a> )etc. </h4> </li>
+    <li class="slide"><h4>Explore new posibilites: WebRTC <a href="http://html5video.org/videowall">video wall</a></h4></li>
+</section>
 
 <section class="slide vcenter">
 	<h2> Questions? </h2>

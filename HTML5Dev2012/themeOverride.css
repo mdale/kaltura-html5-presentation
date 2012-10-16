@@ -29,3 +29,7 @@
 .slide h2{
 	font-size:2em;
 }
+
+.deck-container > .slide .deck-before, .deck-container > .slide .deck-previous {
+	opacity:1;
+}
